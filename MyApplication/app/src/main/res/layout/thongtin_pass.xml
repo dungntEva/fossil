@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD8A00"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_arrow_left" />
+
+            </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+            <TextView
+                android:id="@+id/txt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Thông tin"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Đổi Mật Khẩu"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_pass_hien_tai"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mật khẩu hiện tại"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="#dddde0" />
+
+    <EditText
+        android:id="@+id/edit_pass_moi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="Mật khẩu mới"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="#dddde0" />
+
+    <EditText
+        android:id="@+id/edit_nhap_lai_pass_moi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập lại mật khẩu mới"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="#dddde0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+            android:id="@+id/btn_dang_nhap"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật"
+                android:textColor="@android:color/white" />
+
+        </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

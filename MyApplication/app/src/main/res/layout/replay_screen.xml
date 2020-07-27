@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map_replay"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FD8A00">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_arrow_left" />
+
+            </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+        android:id="@+id/btn_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/play_1" />
+
+    </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+    <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+        android:id="@+id/btn_play_fast"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_play"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_play_fast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1x"
+            android:textColor="#FD8A00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+    <vn.com.flex.dragonfly.lib.MultiDirectionSlidingDrawer xmlns:my="http://schemas.android.com/apk/res/vn.com.flex.dragonfly"
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        my:content="@+id/content"
+        my:direction="bottomToTop"
+        my:handle="@+id/handle">
+
+        <include
+            android:id="@id/content"
+            layout="@layout/alarm_menu_type_warn" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@android:color/transparent" />
+    </vn.com.flex.dragonfly.lib.MultiDirectionSlidingDrawer>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:maxHeight="3dp"
+        android:progressDrawable="@drawable/progress"
+        android:thumb="@drawable/circle3" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+            android:id="@+id/btn_canh_bao"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/btn_image_canh_bao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bat_canh_bao_80" />
+
+        </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+        <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+            android:id="@+id/btn_tat_may"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/btn_canh_bao">
+
+            <ImageView
+                android:id="@+id/btn_image_tat_may"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tat_may_80" />
+
+        </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+        <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+            android:id="@+id/btn_warning"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/btn_tat_may">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/warn" />
+        </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_alert_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/btn_tat_may"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_alert_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+            android:id="@+id/btn_xemlai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/btn_warning">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/xemlai" />
+        </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+
+        <vn.com.flex.dragonfly.lib.AnimationLinearLayout
+            android:id="@+id/btn_more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/btn_xemlai">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/more_active" />
+        </vn.com.flex.dragonfly.lib.AnimationLinearLayout>
+    </RelativeLayout>
+
+    <vn.com.flex.dragonfly.lib.MultiDirectionSlidingDrawer xmlns:my="http://schemas.android.com/apk/res/vn.com.flex.dragonfly"
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        my:content="@+id/content"
+        my:direction="bottomToTop"
+        my:handle="@+id/handle">
+
+        <include
+            android:id="@id/content"
+            layout="@layout/other_menu_layout" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@android:color/transparent" />
+    </vn.com.flex.dragonfly.lib.MultiDirectionSlidingDrawer>
+
+
+</RelativeLayout>
+

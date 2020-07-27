@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DragonFly</string>
+    <string name="title_activity_maps">DragonFly</string>
+    <string name="OK">Ok</string>
+    <string name="Cancel">Cancel</string>
+    <string name="gui_that_bai">Gửi thất bại</string>
+    <string name="du_lieu_khong_hop_le">Dữ liệu không hợp lệ</string>
+    
+    <string name="bat_canh_bao_1">Bạn có chắc muốn bật cảnh báo chống trộm không?</string>
+    <string name="tat_canh_bao_1">Bạn có chắc muốn tắt cảnh báo chống trộm không?</string>
+    <string name="bat_canh_bao_2">Thiết bị đang ở chế độ nghỉ hoặc mất kết nối, Bạn có muốn dùng SMS để bật cảnh báo không?</string>
+    <string name="tat_canh_bao_2">Thiết bị đang ở chế độ nghỉ hoặc mất kết nối, Bạn có muốn dùng SMS để tắt cảnh báo không?</string>
+    <string name="bat_canh_bao_3">Gửi lệnh bật cảnh báo chống trộm thành công. Vui lòng chờ vài giây để hệ thống cập nhật trạng thái</string>
+    <string name="tat_canh_bao_3">Gửi lệnh tắt cảnh báo chống trộm thành công. Vui lòng chờ vài giây để hệ thống cập nhật trạng thái</string>
+    <string name="bat_canh_bao_4">Gửi lệnh thất bại.. Bạn có muốn dùng SMS để bật cảnh báo không? ( Yêu cầu dùng số chủ nhân của thiết bị)</string>
+    <string name="tat_canh_bao_4">Gửi lệnh thất bại.. Bạn có muốn dùng SMS để tắt cảnh báo không? ( Yêu cầu dùng số chủ nhân của thiết bị)</string>
+    
+    <string name="mo_may_xe_1">Bạn có chắc muốn mở máy xe không? Vui lòng nhập mật khẩu đăng nhập và nhấn nút OK</string>
+    <string name="tat_may_xe_1">Bạn có chắc muốn tắt máy xe không? Vui lòng nhập mật khẩu đăng nhập và nhấn nút OK</string>
+    <string name="tat_may_xe_2">Thiết bị đang ở chế độ nghỉ hoặc mất kết nối, bạn có phải dùng SMS hoặc gọi vào để tắt máy xe?</string>
+    <string name="mo_may_xe_2">Thiết bị đang ở chế độ nghỉ hoặc mất kết nối, bạn có phải dùng SMS hoặc gọi vào để mở máy xe?</string>
+    <string name="tat_may_xe_3">Gửi lệnh tắt máy thất bại, bạn có muốn tắt máy bằng tin nhắn không?</string>
+    <string name="mo_may_xe_3">Gửi lệnh mở máy thất bại, bạn có muốn mở máy bằng tin nhắn không?</string>
+    <string name="mat_khau_may_xe">Mật khẩu không chính xác. Vui lòng thực hiện lại hoặc liên hệ số hotline 19006061 để được hỗ trợ</string>
+
+</resources>
